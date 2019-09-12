@@ -99,13 +99,6 @@ exp = exp[rownames(exp) %in% as.character(markers),]
 exp <- data.frame(exp)
 write.table(exp, "/path/to/worksheet-name/exp.tsv", sep="\t", row.names=T)
 ```
-
-Now you have written out four key types of information for the Cell Type Worksheet:
-1. Expression Matrix
-2. Cell to Cluster Assignment
-3. XY Coordinates of dimensionality reduction algorithm.
-4. Gene Metrics Per Cluster
-
 Now it's time to tar and gzip your worksheet directory.
 ```
 tar -cvzf worksheet-name.ctw.tgz /path/to/worksheet-name
