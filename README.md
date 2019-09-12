@@ -24,10 +24,30 @@ This readme servers as instructions for how to make Cell Type Worksheet with the
 The Cell Type Worksheet format is simply a compressed directory with a minimum of 4 tab delimited files:
 
 1. Expression Matrix
+     + File name is "exp.tsv"
+     + Gene names are rows, Cell ids are columns
+     + Can be filtered down to genes of interest
+     
 2. Cell to Cluster Assignment
+     + File name is "clustering.tsv"
+     + First column is cell ids
+     + Second columns is cluster assignment
+     + First line is a header.
+     
 3. XY Coordinates
+     + File name is "xys.tsv"
+     + First column is cell ids
+     + Second Column is x coordinates
+     + Third Column is y coordinates
+     + First line is a header.
+     
 4. Gene Metrics Per Cluster
-
+     + File name is "markers.tsv"
+     + First column is "gene"
+     + Last columns is "cluster"
+     + At least 2 columns inbetween "gene" and "cluster", e.g. "avg.exp" and "pct.exp"
+     
+     
 ### <a name="vig"></a> Vignette
 For this example we will assume you have already followed the Seurat pipeline down past the
 dimensionality reduction stage and the clustering stage.
