@@ -1,5 +1,5 @@
 # ctwR
-Generate a Cell Type Worksheet from a Seurat Object in R
+Vignette creating a Cell Type Worksheet from a Seurat Object in R.
 
 ### What is a Cell Type Worksheet?
 A Cell Type Worksheet is an application designed to ease the burden of manual cell type annotation from single cell
