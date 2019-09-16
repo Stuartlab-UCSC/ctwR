@@ -5,7 +5,7 @@ Create a Cell Type Worksheet from a Seurat Object in R.
 * [Minimal amount of information to create a CTW](#format)
 * [Vignette for composing a Cell Type Worksheet](#vig)
 
-### <a name="what"></a> What is a Cell Type Worksheet?
+## <a name="what"></a> What is a Cell Type Worksheet?
 A Cell Type Worksheet is an application designed to ease the burden of manual cell type annotation from single cell
 mRNA sequencing experiments. It lets you explore the specificity of markers across clusters and label the clusters
 with a cell type annotation.
@@ -20,7 +20,7 @@ Here's a rough visual of the layout of the application, the gene metrics are exp
 ![Alt text](cell_atlas_layout.png)
 
 This readme servers as instructions for how to make Cell Type Worksheet with the Seurat Package.
-### <a name="format"></a> CTW format
+## <a name="format"></a> CTW format
 The Cell Type Worksheet format is simply a compressed directory with a minimum of 4 tab delimited files:
 
 1. Expression Matrix
@@ -86,7 +86,7 @@ The Cell Type Worksheet format is simply a compressed directory with a minimum o
      + At least 2 columns inbetween "gene" and "cluster", e.g. "avg.exp" and "pct.exp"
      
      
-### <a name="vig"></a> Vignette
+## <a name="vig"></a> Vignette
 For this example we will assume you have already followed the Seurat pipeline down past the
 dimensionality reduction stage and the clustering stage.
 
