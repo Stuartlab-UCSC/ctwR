@@ -21,7 +21,7 @@ Here's a rough visual of the layout of the application, the gene metrics are exp
 
 This readme servers as instructions for how to make Cell Type Worksheet with the Seurat Package.
 ## <a name="format"></a> CTW format
-The Cell Type Worksheet format is simply a compressed directory with a minimum of 4 tab delimited files:
+The Cell Type Worksheet format is a compressed directory with a minimum of 4 tab delimited files:
 
 1. Expression Matrix
 
