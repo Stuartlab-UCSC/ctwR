@@ -24,17 +24,45 @@ This readme servers as instructions for how to make Cell Type Worksheet with the
 The Cell Type Worksheet format is simply a compressed directory with a minimum of 4 tab delimited files:
 
 1. Expression Matrix
+
+|       gene       | AAACCTGCAAACTGTC | AAACCTGCAAGGGTCA | AAACCTGCAAGTAATG | ... |
+|:----------------:|:----------------:|------------------|------------------|-----|
+| TP53 |         0        | 0                | 0                | ... |
+| ALKBH6 |         1        | 0                | 1                | ... |
+| MYLH1 |         2        | 1                | 3                | ... |
+| TMNT2 |         0        | 4.5              | 0                | ... |
+| TTN |        3.4       | 0                | 2                | ... |
+
+
      + File name is "exp.tsv"
      + Gene names are rows, Cell ids are columns
      + Can be filtered down to genes of interest
      
 2. Cell to Cluster Assignment
+
+|      cellids     | cluster |
+|:----------------:|:-------:|
+| AAACCTGCAAACTGTC |    1    |
+| AAACCTGCAAGGGTCA |    1    |
+| AAACCTGCAAGTAATG |    2    |
+| AAACCTGCACATAACC |    3    |
+| AAACCTGCAGACGCCT |    3    |
+
      + File name is "clustering.tsv"
      + First column is cell ids
      + Second columns is cluster assignment
      + First line is a header.
      
 3. XY Coordinates
+
+|      cellids     |  x  | y   |
+|:----------------:|:---:|-----|
+| AAACCTGCAAACTGTC | 1.1 | 0.4 |
+| AAACCTGCAAGGGTCA | 1.5 | 0.8 |
+| AAACCTGCAAGTAATG | 2.2 | 3.2 |
+| AAACCTGCACATAACC | 3.3 | 4.5 |
+| AAACCTGCAGACGCCT | 3.4 | 4.7 |
+
      + File name is "xys.tsv"
      + First column is cell ids
      + Second Column is x coordinates
@@ -42,6 +70,16 @@ The Cell Type Worksheet format is simply a compressed directory with a minimum o
      + First line is a header.
      
 4. Gene Metrics Per Cluster
+
+|  gene  | t-statistic | pct.exp | avg.exp.scaled | ... | cluster |
+|:------:|:-----------:|---------|----------------|-----|---------|
+|  TP53  |     3.4     | 46      | 2.2            | ... | 1       |
+| ALKBH6 |    -0.86    | 0       | -0.1           | ... | 1       |
+|  TP53  |     -0.1    | 15.2    | -0.01          | ... | 2       |
+| ALKBH6 | 1.2         | 35      | 0.95           | ... | 2       |
+|  TP53  |     3.8     | 88.2    | 2.5            | ... | 3       |
+| ALKBH6 |     3.4     | 100     | 2.5            | ... | 3       |
+
      + File name is "markers.tsv"
      + First column is "gene"
      + Last columns is "cluster"
