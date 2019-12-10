@@ -162,3 +162,9 @@ Now it's time to tar and gzip your worksheet directory.
 tar -cvzf worksheet-name.ctw.tgz /path/to/worksheet-name
 ```
 Your worksheet-name.ctw.tgz file is ready to upload to the Cell Type Workbench.
+
+To upload this worksheet data to the server, go to http://https://cellatlas.ucsc.edu/cell-type, 
+log in, open the menu in the upper left and select "Upload Data".
+
+If you do not have an account yet, you may create one by clicking on "Sign in" in the upper 
+right of the screen. Then click "Register".
