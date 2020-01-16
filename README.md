@@ -1,5 +1,7 @@
 # ctwR
-Create a Cell Type Worksheet from a Seurat Object in R.
+Create a Cell Type Worksheet from a Seurat Object in R. This is an older, manual method to
+extract data from a seurat object. For an automated script, see 
+[ctwseurat](https://github.com/Stuartlab-UCSC/ctwseurat)
 
 * [What is a Cell Type Worksheet?](#what)
 * [Minimal amount of information to create a CTW](#format)
